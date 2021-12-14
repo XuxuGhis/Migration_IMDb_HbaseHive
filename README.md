@@ -24,3 +24,12 @@ Mais aussi réfléchir aux plus de cas d'usages pour adapter les RowKey => et r�
 Une deuxième option est possible pour la réalisation de ce projet : "reprendre tout depuis 0".
 C'est-à-dire : faire implémentations ( _put_)et plusieurs CF intelligement (pour ~10 films; ~10 acteurs et ~10 réalisateurs)
 Puis les réquêter avec Hive pour prouver que ça fonctionne et que la base est fonctionnel en expliquant comment ça fonctionne sur le _README_.
+
+![image](https://user-images.githubusercontent.com/44291961/145956658-3a709c0a-1c86-4fcc-8f94-6ca2b3bc6608.png)
+![image](https://user-images.githubusercontent.com/44291961/145956691-4ef9f47f-a0e9-4b62-9146-a6a43c1afb4d.png)
+
+
+
+___________
+# Explication sir les données utilisées
+_// faire un schéma explicatif_
