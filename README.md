@@ -1,7 +1,7 @@
 # grossesdonnees
 Projet de Big Data
 
-## Données IMDB
+## Dataset IMDB
 https://www.imdb.com/interfaces/
 
 ## Option 1
