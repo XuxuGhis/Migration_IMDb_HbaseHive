@@ -9,22 +9,24 @@ C'est dans ce contexte que nous allons mener un (petit) projet de Big Data centr
 
 ## Objectif(s) du projet
 Ce projet de Big Data consiste en une migration des données des datasets IMDb vers Hbase en utilisant Hive pour réaliser les requêtes. En d'autres termes, il faut intégrer intelligemment les datasets IMDb en un format compréhensible par HBase.
-(ligne import.csv)
 
 ### Pour la migration
-
 Prérequis : les identifiants des films/acteurs/réalisateurs/etc. sont connus et seront utilisé dans l'interface Web.
 Il faudra penser à une 'métatable'. 
 Mais aussi réfléchir aux plus de cas d'usages pour adapter les RowKey => et répondre à la question "Qu'est-ce qu'on _put_ dans notre CF ?"
 
+## HBase
+HBase est un système de gestion de données distribué open source, basé sur Google Bigtable et faisant partie intégrante de l'écosystème Hadoop.
+Différent des SGBD classiques comme MySQL, HBase 
+
 ## Datasets IMDb
-Tout d'abord, les datasets IMDb seront obtenus via le lien ci-contre : https://datasets.imdbws.com/
+Les datasets IMDb seront obtenus via le lien ci-contre : https://datasets.imdbws.com/
 « IMDb » signifiant Internet Movie Database, les données que nous allons traiter concernent exclusivement l'univers cinématographique.
 Nous serons donc entre autres exposés à des informations telles que des titres de films, des réalisateurs, des genres ou encore des notes attribuées aux films.
 
 Les datasets sont téléchargées en .gz, mais une rapide extraction avec un logiciel dédié comme WinZip ou WinRAR nous donne accès au fichier .tsv pour Tabulation-Separated Values.
 
-
+## 
 
 
 ## Option 2
