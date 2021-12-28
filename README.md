@@ -1,5 +1,11 @@
-# grossesdonnees
-Projet de Big Data
+# Projet de Big Data
+## Introduction
+Le Big Data correspond au domaine informatique où une importante Variété de données est traitée selon un Volume et une Vitesse conséquante.
+Ce sont les trois « V » du Big Data.
+
+En effet, le secteur du Big Data vient répondre essentiellement à des enjeux pleinement contemporains, définis d'une part par l'affluence de données plus ou moins complexes à partir de sources très diverses, et d'autre part par le besoin grandissant d'accès à ces mêmes données dans des proportions et des débits jusqu'alors inégalées dans l'histoire.
+
+C'est dans ce contexte que nous allons mener un (petit) projet de Big Data centré autour du traitement par HBase d'un Dataset IMDB. Ci-dessous seront explicités les détails ce travail.
 
 ## Datasets IMDB
 https://datasets.imdbws.com/
