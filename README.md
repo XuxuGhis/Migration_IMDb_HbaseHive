@@ -26,7 +26,15 @@ Kezako
 Les datasets IMDb seront obtenus via le lien suivant : https://datasets.imdbws.com/
 
 « IMDb » signifiant Internet Movie Database, les données que nous allons traiter concernent exclusivement l'univers cinématographique.
-Nous serons donc entre autres exposés à des informations telles que des titres de films, des réalisateurs, des genres ou encore des notes attribuées aux films.
+
+Nous allons utiliser les six datasets suivants : name_basics, title_basics, title_crew, title_episode, title_principals et title_ratings.
+
+- name_basics : informations standards à propos des personnes (nom, prénom, date de naissance, profession, etc.)
+- title_basics : informations à propos des entrées du dataset (titre, genre, etc.)
+- title_crew : informations sur le(s) réalisateur(s) et le(s) scénariste(s) des films de title_basics
+- title_episode : informations concernant un épisode en particulier d'une série (série duquel est issu l'épisode, saison, numéro d'épisode, etc.)
+- title_principals : informations sur le cast et le crew des films de title_basics
+- title_ratings : informations sur la note moyenne d'un film
 
 Les datasets sont téléchargées en .gz, mais une rapide extraction avec un logiciel dédié comme WinZip ou WinRAR nous donne accès au fichier .tsv pour Tabulation-Separated Values.
 
