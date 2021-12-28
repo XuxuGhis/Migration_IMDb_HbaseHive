@@ -17,10 +17,13 @@ Il faudra penser à une 'métatable'.
 Mais aussi réfléchir aux plus de cas d'usages pour adapter les RowKey => et répondre à la question "Qu'est-ce qu'on _put_ dans notre CF ?"
 
 ## HBase
-HBase est un système de gestion de données distribué open source, basé sur Google Bigtable et faisant partie intégrante de l'écosystème Hadoop. Différent des SGBD classiques comme MySQL, HBase 
+HBase est un système de gestion de données distribué open source, basé sur Google Bigtable et faisant partie intégrante de l'écosystème Hadoop. Différent des SGBD classiques comme MySQL, HBase propose une gestion basée sur le concept de rows, chacune indexée par une row key.
+
+## Hive
+Kezako
 
 ## Datasets IMDb
-Les datasets IMDb seront obtenus via le lien ci-contre : https://datasets.imdbws.com/
+Les datasets IMDb seront obtenus via le lien suivant : https://datasets.imdbws.com/
 
 « IMDb » signifiant Internet Movie Database, les données que nous allons traiter concernent exclusivement l'univers cinématographique.
 Nous serons donc entre autres exposés à des informations telles que des titres de films, des réalisateurs, des genres ou encore des notes attribuées aux films.
