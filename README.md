@@ -1,29 +1,30 @@
 # Projet de Big Data
 ## Introduction
-/tLe Big Data correspond au domaine informatique où une importante Variété de données est traitée selon un Volume et une Vitesse conséquante.
+Le Big Data correspond au domaine informatique où une importante Variété de données est traitée selon un Volume et une Vitesse conséquante.
 Ce sont les trois « V » du Big Data.
 
 En effet, le secteur du Big Data vient répondre essentiellement à des enjeux pleinement contemporains, définis d'une part par l'affluence de données plus ou moins complexes à partir de sources très diverses, et d'autre part par le besoin grandissant d'accès à ces mêmes données dans des proportions et des débits jusqu'alors inégalées dans l'histoire.
 
-C'est dans ce contexte que nous allons mener un (petit) projet de Big Data centré autour du traitement par HBase d'un Dataset IMDB. Ci-dessous seront explicités les détails ce travail.
+C'est dans ce contexte que nous allons mener un (petit) projet de Big Data centré autour du traitement par HBase et Hive de Datasets IMDb. Ci-dessous seront explicités les détails ce travail.
 
-## Datasets IMDB
-https://datasets.imdbws.com/
-
-## Option 1
-
-Ce projet de Big Data consiste en une Migration des données IMDB vers Hbase en utilisant Hive pour les requêter.
+## Objectif(s) du projet
+Ce projet de Big Data consiste en une migration des données des datasets IMDb vers Hbase en utilisant Hive pour réaliser les requêtes. En d'autres termes, il faut intégrer intelligemment les datasets IMDb en un format compréhensible par HBase.
 (ligne import.csv)
-
-Autrement dit, à partir des données qu'on a, il va falloir les réintégrer intelligement dans Hbase. 
-
-
 
 ### Pour la migration
 
 Prérequis : les identifiants des films/acteurs/réalisateurs/etc. sont connus et seront utilisé dans l'interface Web.
 Il faudra penser à une 'métatable'. 
 Mais aussi réfléchir aux plus de cas d'usages pour adapter les RowKey => et répondre à la question "Qu'est-ce qu'on _put_ dans notre CF ?"
+
+## Datasets IMDb
+Tout d'abord, les datasets IMDb seront obtenus via le lien ci-contre : https://datasets.imdbws.com/
+« IMDb » signifiant Internet Movie Database, les données que nous allons traiter concernent exclusivement l'univers cinématographique.
+Nous serons donc entre autres exposés à des informations telles que des titres de films, des réalisateurs, des genres ou encore des notes attribuées aux films.
+
+Les datasets sont téléchargées en .gz, mais une rapide extraction avec un logiciel dédié comme WinZip ou WinRAR nous donne accès au fichier .tsv pour Tabulation-Separated Values.
+
+
 
 
 ## Option 2
