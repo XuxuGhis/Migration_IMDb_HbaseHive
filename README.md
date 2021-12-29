@@ -34,7 +34,7 @@ Nous allons utiliser les six datasets suivants : name_basics, title_basics, titl
 - title_crew : informations sur le(s) réalisateur(s) et le(s) scénariste(s) des films de title_basics
 - title_episode : informations concernant un épisode en particulier d'une série (série duquel est issu l'épisode, saison, numéro d'épisode, etc.)
 - title_principals : informations sur le cast et le crew des films de title_basics
-- title_ratings : informations sur la note moyenne d'un film
+- title_ratings : informations sur la note moyenne d'un film ainsi que le nombre de votes
 
 Les datasets sont téléchargées en .gz, mais une rapide extraction avec un logiciel dédié comme WinZip ou WinRAR nous donne accès au fichier .tsv pour Tabulation-Separated Values.
 
