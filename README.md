@@ -1,4 +1,13 @@
 # Projet de Big Data
+# Contenu / Quick start
+Ce repo comporte :
+- Le script de ???
+- Les requêtes Hive dans un fichier ???
+- ???
+- 
+***a compléter***
+
+# Rapport de Projet de Big Data
 ## Introduction
 Le Big Data correspond au domaine informatique où une importante Variété de données est traitée selon un Volume et une Vitesse conséquante.
 
@@ -36,22 +45,39 @@ Les datasets sont téléchargées en .gz, mais une rapide extraction avec un log
 ### Définition de requêtes types
 Il est nécessaire de réfléchir à quels genres de requêtes la base de données pourrait être amenée à répondre. Il est important de mener cette réflexion car la construction de la base de données en dépend. En effet, cela permet de mener à une correcte élaboration des row keys.
 
-Ainsi, nous avons échafaudé 5 requêtes types auxquelles notre base de données HBase est susceptible de répondre :
+Ainsi, nous avons échafaudé **5 requêtes types auxquelles notre base de données HBase est susceptible de répondre** :
 - Tous les films d'un certain genre
 - Tous les films d'un certain réalisateur/scénariste
-- Les séries avec le plus grand nombre de saisons/épisodes
-- Tous les films sortis dans un intervalle de temps
+- Les film avec le plus grand nombre de épisodes
+- Tous les films sortis d'un film
 - Les films/séries dans un intervalle de notes
+
+Nous avons choisi d'implémenter la requête type suivantes :
+- Les films/séries dans un intervalle de notes selon son genre 
 
 ## Etape 2 : HBase
 HBase est un système de gestion de données distribué open source, basé sur Google Bigtable et faisant partie intégrante de l'écosystème Hadoop. Différent des SGBD classiques comme MySQL, HBase propose une gestion basée sur le concept de rows, chacune indexée par une row key.
 
 ### Définir les row keys
+Pour répondre aux besoins de la requêtes type prédéfinie, nous avons consruit la Row Key comme suit :
+- [note]+[id_genre]+[id_film]
+- [id_genre]+[note]+[id_film]
 
 ### Entrer les données dans HBase
 
+*put* 
+
 ## Etape 3 : Hive
-Kezako
+Hive répond à deux besoins, le premier est la traduction de requêtes SQL en Job MapReduce à l'aide d'un langage similaire : le HiveQL.
+Et le premier de connaître l'emplacement des données dans le système grâce aux MétasDonnées que Hive stocke dans le MetaStore.
+Nous utilisons Hive pour effectuer nos requêtes, qui seront détaillées dans le paragraphe suivant.
+### Traduction des requêtes en HiveQL
+
+- la moyenne des note des films d'horreur
+- 
+
+ 
+
 ___________
 # Explication sur les données utilisées
 _// faire un schéma explicatif_
