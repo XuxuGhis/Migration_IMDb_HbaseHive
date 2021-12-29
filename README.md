@@ -46,7 +46,7 @@ Ainsi, nous avons échafaudé 5 requêtes types auxquelles notre base de donnée
 ## Etape 2 : HBase
 HBase est un système de gestion de données distribué open source, basé sur Google Bigtable et faisant partie intégrante de l'écosystème Hadoop. Différent des SGBD classiques comme MySQL, HBase propose une gestion basée sur le concept de rows, chacune indexée par une row key.
 
-### Hive
+## Etape 3 : Hive
 Kezako
 ___________
 # Explication sur les données utilisées
