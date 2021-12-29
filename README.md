@@ -16,13 +16,8 @@ Prérequis : les identifiants des films/acteurs/réalisateurs/etc. sont connus e
 Il faudra penser à une 'métatable'. 
 Mais aussi réfléchir aux plus de cas d'usages pour adapter les RowKey => et répondre à la question "Qu'est-ce qu'on _put_ dans notre CF ?"
 
-### HBase
-HBase est un système de gestion de données distribué open source, basé sur Google Bigtable et faisant partie intégrante de l'écosystème Hadoop. Différent des SGBD classiques comme MySQL, HBase propose une gestion basée sur le concept de rows, chacune indexée par une row key.
-
-### Hive
-Kezako
-
-### Datasets IMDb
+## Etape 1 : Datasets IMDb
+### Premiers coups d'œil
 Les datasets IMDb seront obtenus via le lien suivant : https://datasets.imdbws.com/
 
 « IMDb » signifiant Internet Movie Database, les données que nous allons traiter concernent exclusivement l'univers cinématographique.
@@ -38,16 +33,21 @@ Nous allons utiliser les six datasets suivants : name_basics, title_basics, titl
 
 Les datasets sont téléchargées en .gz, mais une rapide extraction avec un logiciel dédié comme WinZip ou WinRAR nous donne accès au fichier .tsv pour Tabulation-Separated Values.
 
-## Option 2
-Une deuxième option est possible pour la réalisation de ce projet : "reprendre tout depuis 0".
-C'est-à-dire : faire implémentations ( _put_) et plusieurs CF intelligement (pour ~10 films, ~10 acteurs et ~10 réalisateurs)
-Puis les requêter avec Hive pour prouver que ça fonctionne et que la base est fonctionnelle en expliquant comment ça fonctionne sur le _README_.
+### Définition de requêtes types
+Il est nécessaire de réfléchir à quels genres de requêtes la base de données pourrait être amenée à répondre. Il est important de mener cette réflexion car la construction de la base de données en dépend. En effet, cela permet de mener à une correcte élaboration des row keys.
 
-![image](https://user-images.githubusercontent.com/44291961/145956658-3a709c0a-1c86-4fcc-8f94-6ca2b3bc6608.png)
-![image](https://user-images.githubusercontent.com/44291961/145956691-4ef9f47f-a0e9-4b62-9146-a6a43c1afb4d.png)
+Ainsi, nous avons échafaudé 5 requêtes types auxquelles notre base de données HBase est susceptible de répondre :
+- Tous les films d'un certain genre
+- Tous les films d'un certain réalisateur/scénariste
+- Les séries avec le plus grand nombre de saisons/épisodes
+- Tous les films sortis dans un intervalle de temps
+- Les films/séries dans un intervalle de notes
 
+## Etape 2 : HBase
+HBase est un système de gestion de données distribué open source, basé sur Google Bigtable et faisant partie intégrante de l'écosystème Hadoop. Différent des SGBD classiques comme MySQL, HBase propose une gestion basée sur le concept de rows, chacune indexée par une row key.
 
-
+### Hive
+Kezako
 ___________
 # Explication sur les données utilisées
 _// faire un schéma explicatif_
