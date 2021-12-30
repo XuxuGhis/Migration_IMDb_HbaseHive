@@ -78,6 +78,6 @@ Nous utiliserons Hive pour effectuer nos requêtes, qui seront détaillées dans
 
 - La moyenne des notes des films d'horreur
 ```SQL
-SELECT AVG(rating) FROM table_imdb WHERE GENRE == horror
+SELECT films FROM table_imdb WHERE genres == horror && ratings == 3
 ```
 
