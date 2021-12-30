@@ -65,7 +65,12 @@ Pour répondre aux besoins de la requêtes type prédéfinie, nous avons consrui
 
 ### Entrer les données dans HBase
 
-*put* 
+```
+{
+put ’<table name>’,’row1’,’<colfamily:colname>’,’<value>’
+}
+```
+
 
 ## Etape 3 : Hive
 Hive répond à deux besoins, le premier est la traduction de requêtes SQL en Job MapReduce à l'aide d'un langage similaire : le HiveQL.
