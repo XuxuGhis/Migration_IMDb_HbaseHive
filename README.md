@@ -1,5 +1,5 @@
 # Projet de Big Data
-# Contenu/Quick start
+## Contenu/Quick start
 Ce repo comporte :
 - Une description des objectifs du projet
 - La définition des row keys
@@ -8,7 +8,6 @@ Ce repo comporte :
 
 ***à compléter***
 
-# Rapport de Projet de Big Data
 ## Introduction
 Le Big Data correspond au domaine informatique où une importante Variété de données est traitée selon un Volume et une Vitesse conséquante.
 
@@ -60,7 +59,7 @@ Nous avons choisi d'implémenter la requête type suivantes :
 HBase est un système de gestion de données distribué open source, basé sur Google Bigtable et faisant partie intégrante de l'écosystème Hadoop. Différent des SGBD classiques comme MySQL, HBase propose une gestion basée sur le concept de rows, chacune indexée par une row key.
 
 ### Définir les row keys
-Pour répondre aux besoins de la requêtes type prédéfinie, nous avons consruit la Row Key comme suit :
+Pour répondre aux besoins de la requêtes type prédéfinie, nous avons consruit la row key comme suit :
 - [note]+[id_genre]+[id_film]
 - [id_genre]+[note]+[id_film]
 
@@ -70,8 +69,8 @@ Pour répondre aux besoins de la requêtes type prédéfinie, nous avons consrui
 
 ## Etape 3 : Hive
 Hive répond à deux besoins, le premier est la traduction de requêtes SQL en Job MapReduce à l'aide d'un langage similaire : le HiveQL.
-Et le premier de connaître l'emplacement des données dans le système grâce aux MétasDonnées que Hive stocke dans le MetaStore.
-Nous utilisons Hive pour effectuer nos requêtes, qui seront détaillées dans le paragraphe suivant.
+Le second est de connaître l'emplacement des données dans le système grâce aux métadonnées que Hive stocke dans le MetaStore.
+Nous utiliserons Hive pour effectuer nos requêtes, qui seront détaillées dans le paragraphe suivant.
 ### Traduction des requêtes en HiveQL
 
 - la moyenne des note des films d'horreur
@@ -80,5 +79,5 @@ Nous utilisons Hive pour effectuer nos requêtes, qui seront détaillées dans l
  
 
 ___________
-# Explication sur les données utilisées
+## Explication sur les données utilisées
 _// faire un schéma explicatif_
