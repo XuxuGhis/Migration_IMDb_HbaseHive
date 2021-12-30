@@ -81,8 +81,4 @@ Nous utiliserons Hive pour effectuer nos requêtes, qui seront détaillées dans
 ```SQL
 SELECT AVG(rating) FROM...
 ```
- 
 
-___________
-## Explication sur les données utilisées
-_// faire un schéma explicatif_
