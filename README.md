@@ -1,11 +1,12 @@
 # Projet de Big Data
-# Contenu / Quick start
+# Contenu/Quick start
 Ce repo comporte :
-- Le script de ???
-- Les requêtes Hive dans un fichier ???
-- ???
-- 
-***a compléter***
+- Une description des objectifs du projet
+- La définition des row keys
+- Un script pour entrer les données dans HBase
+- Des requêtes Hive pour interroger la base
+
+***à compléter***
 
 # Rapport de Projet de Big Data
 ## Introduction
