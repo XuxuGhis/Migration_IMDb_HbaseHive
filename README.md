@@ -76,9 +76,8 @@ Le second est de connaître l'emplacement des données dans le système grâce a
 Nous utiliserons Hive pour effectuer nos requêtes, qui seront détaillées dans le paragraphe suivant.
 ### Traduction des requêtes en HiveQL
 
-- la moyenne des note des films d'horreur
-- 
+- La moyenne des notes des films d'horreur
 ```SQL
-SELECT AVG(rating) FROM...
+SELECT AVG(rating) FROM table_imdb WHERE GENRE == horror
 ```
 
