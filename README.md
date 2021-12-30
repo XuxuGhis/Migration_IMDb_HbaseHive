@@ -78,7 +78,9 @@ Nous utiliserons Hive pour effectuer nos requêtes, qui seront détaillées dans
 
 - la moyenne des note des films d'horreur
 - 
-
+```SQL
+SELECT AVG(rating) FROM...
+```
  
 
 ___________
