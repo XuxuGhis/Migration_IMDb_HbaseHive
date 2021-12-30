@@ -66,9 +66,7 @@ Pour répondre aux besoins de la requêtes type prédéfinie, nous avons consrui
 ### Entrer les données dans HBase
 
 ```
-{
 put ’<table name>’,’row1’,’<colfamily:colname>’,’<value>’
-}
 ```
 
 
