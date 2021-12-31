@@ -73,7 +73,7 @@ Dans ce cas-là, il est intéressant de redonder les données grâce à une reco
 ### Entrer les données dans HBase
 Les commandes HBase Shell sont écrites dans le fichier *commandesHBase_et_HiveQL* sous la forme ci-dessous :
 ```
-put ’<table name>’,’row1’,’<colfamily:colname>’,’<value>’
+put ’<table name>’,’<rowkey>’,’<colfamily:colname>’,’<value>’
 ```
 Nous avons un script batch, *hbase_script_gen.bat*, qui permet de générer ces commandes automatiquement à partir de la lecture des fichiers *.tsv*
 
