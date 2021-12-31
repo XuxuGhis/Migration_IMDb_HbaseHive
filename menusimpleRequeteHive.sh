@@ -37,7 +37,7 @@ echo_rosechelou () {
     echo -e "\e[0;39;49m "
 }
 
-echo_chelou () {
+affichage3 () {
 
     echo -e "\e[0;39;49m "
     echo -e "[\e[5;30;45m$2\e[0;39;49m] \e[0;30;45m$1\e[0;39;49m"
@@ -57,12 +57,12 @@ function menu {
 	      read answer
 	      case $answer in
 		        1)
-                echo_chelou "Execution de la requete en cours." "⚙⚙⚙"
+                affichage3 "Execution de la requete en cours." "⚙⚙⚙"
 			          echo "requete 1"
 			          x=1
 			          ;;
 		        2)
-                echo_chelou "Execution de la requete en cours." "⚙⚙⚙"
+                affichage3 "Execution de la requete en cours." "⚙⚙⚙"
 			          echo "requete 2"
 			          x=1
 			          ;;
