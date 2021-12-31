@@ -2,8 +2,8 @@
 ## Contenu
 Ce repo comporte :
 - Un rapport de projet
-- Un squelette de menu bash destiné à déclencher les requêtes Hive.
-- Fichier *.tsv* reformater 
+- Un squelette de menu bash destiné à déclencher les requêtes Hive
+- Fichier *.tsv* reformaté
 - Un script pour générer à partir des *.tsv* des commandes d'insertion de données (_put_) HBase Shell.
 - Des requêtes types Hive pour interroger la base
 
