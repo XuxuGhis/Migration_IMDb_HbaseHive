@@ -75,7 +75,7 @@ Les commandes HBase Shell sont écrites dans le fichier *commandesHBase_et_HiveQ
 ```
 put ’<table name>’,’<rowkey>’,’<colfamily:colname>’,’<value>’
 ```
-Nous avons un script batch, *hbase_script_gen.bat*, qui permet de générer ces commandes automatiquement à partir de la lecture des fichiers *.tsv*
+Nous avons un script batch, *hbase_script_gen.bat*, qui permet de générer ces commandes automatiquement à partir de la lecture des fichiers *.tsv*. Une capture d'écran est disponible sur le repo en guise d'exemple.
 
 ## Etape 3 : Hive
 Hive répond à deux besoins, le premier est la traduction de requêtes SQL en Job MapReduce à l'aide d'un langage similaire : le HiveQL.
