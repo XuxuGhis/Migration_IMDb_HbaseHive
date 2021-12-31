@@ -1,0 +1,43 @@
+
+Pour faire ces commandes il faut marquer dans le EDGE la commande suivante :
+
+./bin/hbase shell
+
+### HBASE creatation des tables ###
+
+create 'table_imdb', 'film', 'crew', 'ratings'
+
+
+### HBASE import des données ###
+
+put 'table_imdb', '2021_horror_scream', 'film:titre', 'Scream'
+put 'table_imdb', '2021_horror_scream', 'ratings:avg', '3'
+put 'table_imdb', '2021_horror_scream', 'ratings:nb', '1500'
+put 'table_imdb', '2021_horror_scream', 'crew:directors', 'Tyler Gillett and Matt Bettinelli-Olpin'
+
+put 'table_imdb', '2007_action_transformers', 'film:titre', 'Transformers'
+put 'table_imdb', '2007_action_transformers', 'ratings:avg', '5'
+put 'table_imdb', '2007_action_transformers', 'ratings:nb', '1'
+put 'table_imdb', '2007_action_transformers', 'crew:directors', 'Sunny Bay'
+
+put 'table_imdb', '1997_drama_titanic', 'film:titre', 'Titanic'
+put 'table_imdb', '1997_drama_titanic', 'ratings:avg', '4.5'
+put 'table_imdb', '1997_drama_titanic', 'ratings:nb', '167464'
+put 'table_imdb', '1997_drama_titanic', 'crew:directors', 'Celine Dion'
+
+get 'table_imdb', 'film'
+
+Pour faire ces commandes il faut marquer dans le EDGE la commande suivante :
+
+$HIVE_HOME/bin/hive
+
+### HiveQL ###
+
+CREATE TABLE htable_imdb(key STRING,name STRING,age INT) 
+STORED BY'org.apache.hadoop.hive.hbase.HBaseStorageHandler' 
+WITH SERDEPROPERTIES ('hbase.columns.mapping" = ":key,personal:age,personal:name") 
+TBLPROPERTIES("hbase.table.name" = "student");
+
+-----
+echo "create 'test', 'cf'" > ./sample_commands.txt
+hbase shell ./sample_commands.txt
